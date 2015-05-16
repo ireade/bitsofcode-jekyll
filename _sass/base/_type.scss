@@ -1,0 +1,110 @@
+/* ---------------------
+	Type
+ --------------------- */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,400italic,700|Inconsolata:400,700);
+
+
+$title-font: 'Montserrat', sans-serif;;
+$body-font: 'Lora', serif;
+$code-font: 'Inconsolata', monospace;
+
+
+body, 
+html {
+	font-family: $body-font;
+	line-height: 1.5;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgb(40, 40, 40);
+}
+
+a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $title-font;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 16px;
+}
+h3 {
+	font-size: 14px;
+}
+
+pre,
+.inline-code {
+	font-family: $code-font;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+small {
+	font-size: 12px;
+}
+
+.site-title,
+footer {
+	font-family: $title-font;
+	font-weight: 700;
+	font-size: 12px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.banner-text {
+	font-family: $body-font;
+	font-weight: 700;
+	//font-size: 18px;
+}
+
+.img-subheading {
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+}
+
+.post-meta,
+.post-footer-box,
+.pagination,
+label,
+input[type="text"],
+input[type="email"]  {
+	font-family: $title-font;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.btn {
+	font-family: $title-font;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+}

@@ -1,0 +1,49 @@
+# SITE SETTINGS
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "localhost:4000" # the base hostname & protocol for your site
+permalink: /:year/:title
+port: 4000
+
+# Auto Generation of Category Pages by shigeya
+# https://github.com/shigeya/jekyll-category-archive-plugin
+
+
+# THEME SETTINGS
+theme:
+  title: Bits of Code Theme
+
+  
+  banner_text: >
+     <p>"Stay hungry. Stay foolish." - Steve Jobs / Rashmi Bansal</p>
+     
+     <p>Never feel satisfied with your current state of knowledge. Always feel like you have something new to learn. Never consider yourself finished.</p>
+
+  about: >
+    This is the theme for the bitsofco.de blog. It is a very basic, post-drived theme.
+
+
+  # Social Icons
+  rss: true
+  email_address: 
+  twitter: 
+  github:
+  codepen:
+
+  # Scripts
+  google_analytics: "UA-60256750-1"
+  disqus_shortname: "bitsofcode"
+
+  # Subscribe
+  subscribe: true
+  # To enable subscribe, paste your mailchimp code in _includes/subscribe.html
+
+
+# PAGINATION
+paginate: 5
+paginate_path: "page/:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: :compressed

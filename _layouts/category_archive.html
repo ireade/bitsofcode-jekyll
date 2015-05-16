@@ -1,0 +1,16 @@
+---
+# Auto Generation of Category Pages by shigeya
+# https://github.com/shigeya/jekyll-category-archive-plugin
+layout: default
+title: Blog Posts in Category
+---
+<header class="post-header wrapper">
+<h1 class="post-title"> Posts in "{{ page.category }}" Category </h1>
+</header>
+
+<main class="wrapper blogroll-sidebar">
+  <div class="blogroll">
+	{{ content }}
+  </div>
+  {% include sidebar.html %}
+</main>

@@ -1,0 +1,51 @@
+/* ---------------------
+	Modules - Code
+ --------------------- */
+
+ /* */
+
+.highlight {
+	background-color: rgb(255, 255, 255);
+	padding: 10px 20px;
+	line-height: 1.5;
+	margin: 2em 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+.lineno {
+	padding-right: 10px;
+	color: #999;
+}
+
+code {
+	background-color: rgb(255, 255, 255);
+	padding: 0 5px;
+}
+
+
+/* */
+
+.example-box {
+
+	text-align: center;
+
+	border-radius: 4px;
+	
+	background-color: rgb(255, 255, 255);
+
+	padding: 10px 20px;
+	box-sizing: border-box;
+
+	margin-bottom: 1.5em;
+
+}
+
+.charset-example-small {
+	display: block;
+	margin: 1.5em auto;
+	font-size: 14px;
+	color: #000;
+}

@@ -1,0 +1,7 @@
+/* ---------------------
+	Mixins
+ --------------------- */
+
+ @mixin border {
+ 	border: 3px solid $theme-colour;
+ }

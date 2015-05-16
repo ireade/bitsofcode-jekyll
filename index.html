@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="home-banner">
+
+  <img src="{{site.url | prepend: site.baseurl}}/img/header.jpg" alt="Header Image">
+  
+  {% if site.theme.banner_text %}
+  <div class="banner-text">{{ site.theme.banner_text }}</div>
+  {% endif %}
+</div>
+
+<main class="wrapper blogroll-sidebar">
+
+  <ul class="blogroll">
+    {% for post in paginator.posts %}
+      <li class="blog-excerpt">
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <span class="post-meta">Posted on {{ post.date | date: "%d %B %Y" }}</span>
+
+        <div class="excerpt">{{ post.excerpt }}</div>
+
+        <div class="btn">
+          <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
+        </div>
+      </li>
+    {% endfor %}
+
+
+    {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+      
+        {% if paginator.previous_page %}
+        
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+          <i class="fa fa-angle-double-left"></i> Newer
+        </a> 
+        {% endif %}
+
+        <span class="paginator-index">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+        {% if paginator.next_page %}
+
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+          {{ site.theme.str_next }} 
+          Older <i class="fa fa-angle-double-right"></i>
+        </a>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+  </ul>
+
+  
+  {% include sidebar.html %}
+
+
+
+</main>

@@ -1,0 +1,91 @@
+/* ---------------------
+	Modules - Blogroll
+ --------------------- */
+
+ .blogroll-sidebar {
+ 	position: relative;
+ 	@include clearfix;
+ }
+
+
+ /* Sidebar */
+
+.sidebar {
+	float: right;
+	width: 250px;
+
+	@include border;
+	padding: 10px;
+	text-align: center;
+
+	@media screen and (max-width: 800px) {
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	// .about {
+
+	// }
+
+	.icons {
+		margin-top: 1em;
+
+		a {
+			display: inline-block;
+			margin: 3px;
+
+			background-color: $theme-colour;
+
+			height: 30px;
+			width: 30px;
+			padding: 3px;
+			border-radius: 50%;		
+		}
+	}
+
+	h3 {
+		margin: 2em 0 10px 0;
+	}
+
+}
+
+
+
+ /* Blog Posts */
+
+.blogroll {
+	float: left;
+	width: 60%;
+
+	@media screen and (max-width: 800px) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.blog-excerpt {
+	margin-bottom: 50px;
+	list-style-type: none;
+
+	h2 {
+		line-height: 1.2;
+	}
+
+	.excerpt {
+		padding: 20px 0 20px;
+	}
+}
+
+
+/* Pagination */
+.pagination {
+	@include border;
+	text-align: center;
+	padding: 5px;
+}
+
+.paginator-index {
+	padding: 0 20px;
+
+}

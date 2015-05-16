@@ -1,0 +1,43 @@
+/* ---------------------
+	  General Layout
+ --------------------- */
+
+html, body {
+	background-color: rgb(245, 245, 245);
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 780px;
+	margin: 0 auto;
+
+	//border: 1px solid red;
+
+}
+
+
+
+/* Header and Footer */
+
+.site-title {
+	margin-top: 100px;
+	height: 50px;
+
+	@media screen and (max-width: 600px) {
+		margin-top: 50px;
+	}
+}
+
+
+footer.wrapper {
+	margin: 50px auto;
+	text-align: center;
+}
+
+
+/* */
+
+.page-content {
+
+}
+

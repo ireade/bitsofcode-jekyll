@@ -1,0 +1,46 @@
+<div class="sidebar">
+
+	<p class="about">{{ site.theme.about }}</p>
+
+	<div class="icons">
+	{% if site.theme.rss %}
+		<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+			<i class="fa fa-rss"></i>
+		</a>
+	{% endif %}
+
+	{% if site.theme.email_address %}
+		<a href="mailto:{{ site.theme.email_address }}">
+			<i class="fa fa-envelope"></i>
+		</a>
+	{% endif %}
+
+	{% if site.theme.twitter%}
+		<a href="http://www.twitter.com/{{ site.theme.twitter }}">
+			<i class="fa fa-fw fa-twitter"></i>
+		</a>
+	{% endif %}
+
+	{% if site.theme.github %}
+		<a href="http://github.com/{{ site.theme.github }}">
+			<i class="fa fa-fw fa-github"></i>
+		</a>
+	{% endif %}
+
+	{% if site.theme.codepen %}
+		<a href="http://codepen.io/{{ site.theme.codepen }}">
+			<i class="fa fa-fw fa-codepen"></i>
+		</a>
+	{% endif %}
+
+	</div>
+
+	{% if site.categories %}
+	<h3>Categories</h3>
+	{% for category in site.categories %}
+	   <a href="{{ site.baseurl }}/{{ category | first }}">{{ category | first }}</a>, 
+	{% endfor %}
+	{% endif %}
+
+	{% include subscribe.html %}
+</div>
