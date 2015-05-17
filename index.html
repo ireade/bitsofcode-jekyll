@@ -2,12 +2,15 @@
 layout: default
 ---
 
-<div class="home-banner">
-
-  <img src="{{site.url | prepend: site.baseurl}}/img/header.jpg" alt="Header Image">
+<div class="home-banner" 
+    {% if site.theme.banner_img %}
+    style="background-image: url('{{site.theme.banner_img}}');"
+    {% endif %} >
   
   {% if site.theme.banner_text %}
-  <div class="banner-text">{{ site.theme.banner_text }}</div>
+  <div class="banner-text">
+    <p>{{ site.theme.banner_text }}</p>
+  </div>
   {% endif %}
 </div>
 

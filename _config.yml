@@ -10,16 +10,18 @@ port: 4000
 
 # THEME SETTINGS
 theme:
-  title: Bits of Code Theme
+  title: Your Blog
 
-  
+  banner_img: "img/header.jpg"
   banner_text: >
      <p>"Stay hungry. Stay foolish." - Steve Jobs / Rashmi Bansal</p>
-     
      <p>Never feel satisfied with your current state of knowledge. Always feel like you have something new to learn. Never consider yourself finished.</p>
 
   about: >
-    This is the theme for the bitsofco.de blog. It is a very basic, post-drived theme.
+    This is the theme for the bitsofco.de blog. It is a very basic, post-driven theme.
+
+  # Colour
+  primary_colour: 'rgb(255, 219, 58);'
 
 
   # Social Icons
@@ -30,11 +32,11 @@ theme:
   codepen:
 
   # Scripts
-  google_analytics: "UA-60256750-1"
-  disqus_shortname: "bitsofcode"
+  google_analytics: 
+  disqus_shortname:
 
   # Subscribe
-  subscribe: true
+  subscribe: false
   # To enable subscribe, paste your mailchimp code in _includes/subscribe.html
 
 

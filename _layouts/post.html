@@ -17,9 +17,18 @@ layout: default
 	  	<div class="share-article">
 	  		<h3>Enjoy the article?</h3>
         <p>
-          <a href="https://twitter.com/intent/tweet/?text='{{page.title}}'%20from%20bitsofco.de&url=http://www.bitsofco.de{{page.url}}&via={{site.theme.twitter}}" class="share-link" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            <i class="fa fa-twitter"></i> Share on Twitter
+          <a class="twitter-share-button"
+          href="https://twitter.com/share"
+          data-text="{{page.title}} from {{site.title}}"
+          data-url="{{page.url | prepend: site.url }}"
+          data-via="{{site.theme.twitter}}"
+          data-related="{{site.theme.twitter}}"> 
+            <i class="fa fa-twitter"></i> Share on Twitter 
           </a>
+        <script>
+        window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+        </script> 
+
         </p>
 	  	</div>
 	  	<div class="read-more">

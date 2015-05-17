@@ -11,23 +11,23 @@
  	position: relative;
  	text-align: center;
  	overflow: hidden;
+	
+	background-color: $theme-colour;
+ 	background-position: center;
+ 	background-size: cover;
+ 	
 
- 	img {
-		width: 100%;
-		z-index: 1;
-		opacity: 0.7;
- 	}
 
  	.banner-text {
- 		position: absolute;
- 		top: 50%;
- 		left: 50%;
- 		@include transform(translate(-50%, -50%));
- 		z-index: 2;
+ 		width: 100%;
+ 		padding: 30px;
+ 		margin: 0;
+ 		text-align: center;
+ 		background-color: rgba(255, 255, 255, 0.3);
 
- 		width: 80%;
- 		max-width: 500px;
-
- 		p { margin-bottom: 1em;}
+ 		p { 
+ 			max-width: 500px;
+ 			margin: 0 auto 10px;
+ 		}
  	}
  }
