@@ -15,7 +15,7 @@ The Jekyll theme I created to power my blog, [bitsofco.de](http://bitsofco.de).
 	- About blurb
 	- Social media icons
 
-## Credit
+## Credits
 
 The autogeneration of category pages is handled by [a plugin created by shigeya](https://github.com/shigeya/jekyll-category-archive-plugin).
 
