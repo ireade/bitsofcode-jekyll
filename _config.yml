@@ -1,6 +1,6 @@
 # SITE SETTINGS
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "localhost:4000" # the base hostname & protocol for your site
+baseurl: "/bitsofcode-theme/" # the subpath of your site, e.g. /blog/
+url: "http://ireade.github.io" # the base hostname & protocol for your site
 permalink: /:year/:title
 port: 4000
 

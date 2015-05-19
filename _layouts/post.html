@@ -36,7 +36,7 @@ layout: default
 
         {% for category in page.categories %}
           {% if category != 'all' %}
-            <a href="{{ site.baseurl }}/{{ category }}">More posts in "{{ category }}" category</a><br/>
+            <a href="{{ site.baseurl }}{{ category }}">More posts in "{{ category }}" category</a><br/>
           {% endif %}
         {% endfor %}
 	  	</div>
